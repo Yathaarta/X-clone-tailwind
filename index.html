@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Clone</title>
+    
+    <link rel="preload" as="font" crossorigin="anonymous" href="https://abs.twimg.com/responsive-web/client-web/Chirp-Light.3a18e64a.woff2" type="font/woff2">
+    <link rel="preload" as="font" crossorigin="anonymous" href="https://abs.twimg.com/responsive-web/client-web/Vazirmatn-Light.a929468a.woff2" type="font/woff2">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body class="bg-black text-neutral-200">
+
+    <div class="flex justify-center w-full max-w-[1254.65px] mx-auto">
+        
+        <div class="leftSection hidden sm:flex flex-col sm:w-[88px] lg:w-11/50">
+            <div class="sidebar flex-col sticky top-0 sm:items-center lg:items-start flex w-full">
+                <div class="logo px-3 py-3 lg:pl-1 sm:-ml-6 lg:ml-2"><svg viewBox="0 0 24 24" class="w-7.5 invert r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk"><g><path d="M21.742 21.75l-7.563-11.179 7.056-8.321h-2.456l-5.691 6.714-4.54-6.714H2.359l7.29 10.776L2.25 21.75h2.456l6.035-7.118 4.818 7.118h6.191-.008zM7.739 3.818L18.81 20.182h-2.447L5.29 3.818h2.447z"></path></g></svg></div>
+                <ul class="text-xl font-medium mx-1 sm:items-center lg:items-start flex flex-col w-full">
+                    <li class="SideList"><span class="material-symbols-outlined">home</span><span class="hidden lg:inline">Home</span></li>
+                    <li class="SideList"><span class="material-symbols-outlined">search</span><span class="hidden lg:inline">Explore</span></li>
+                    <li class="SideList"><span class="material-symbols-outlined">notifications</span><span class="hidden lg:inline">Notifications</span></li>
+                    <li class="SideList"><span class="material-symbols-outlined">person_add</span><span class="hidden lg:inline">Follow</span></li>
+                    <li class="SideList"><span class="material-symbols-outlined">mail</span><span class="hidden lg:inline">Chat</span></li>
+                    <li class="SideList"><svg viewBox="0 0 33 32" aria-hidden="true" class="w-6.5 mx-0.5 invert r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e"><g><path d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466"></path></g></svg><span class="hidden lg:inline">Grok</span></li>
+                    <li class="SideList"><span class="material-symbols-outlined">group</span><span class="hidden lg:inline">Communities</span></li>
+                    <li class="SideList"><svg viewBox="0 0 24 24" class="w-6 mx-1 invert r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk"><g><path d="M21.742 21.75l-7.563-11.179 7.056-8.321h-2.456l-5.691 6.714-4.54-6.714H2.359l7.29 10.776L2.25 21.75h2.456l6.035-7.118 4.818 7.118h6.191-.008zM7.739 3.818L18.81 20.182h-2.447L5.29 3.818h2.447z"></path></g></svg><span class="hidden lg:inline">Premium</span></li>
+                    <li class="SideList"><span class="material-symbols-outlined">person</span><span class="hidden lg:inline">Profile</span></li>
+                    <li class="SideList"><span class="material-symbols-outlined">more</span><span class="hidden lg:inline">More</span></li>
+                    <li class="w-full flex sm:justify-center lg:justify-start lg:pl-1"><button class="my-2.5 py-2.5 w-[90%] font-[550] rounded-full bg-neutral-100 text-black hover:bg-neutral-200 hidden lg:block">Post</button></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="middleSection w-full sm:w-25/50 border-l-1 border-r-1 border-neutral-700 min-h-screen">
+            <div class="switchbar flex h-13.5 w-full justify-around font-medium border-b-1 border-neutral-700 sticky top-0 bg-black z-10">
+                <div class="font-bold w-full h-full py-3 hover:bg-neutral-900 text-center cursor-pointer">
+                    <h3 class="underline underline-offset-18 decoration-3 decoration-sky-500 decor">For you</h3>
+                </div>
+                <div class="text-neutral-500 w-full h-full py-3 hover:bg-neutral-900 text-center cursor-pointer">
+                    <h3>Following</h3>
+                </div>
+            </div>
+            
+            <div class="posts">
+                <div class="makeApost flex my-2 px-4.5 gap-2">
+                    <div>
+                        <img class="my-2 w-10 h-10 rounded-full" src="https://pbs.twimg.com/profile_images/1792776913330884608/7xnFDMil_400x400.jpg">
+                    </div>
+                    <div class="flex flex-col w-full mt-3 gap-5">
+                        <input class="text-xl h-fit placeholder-neutral-500 focus:outline-none text-neutral-300 bg-transparent" type="text" placeholder="What's happening?">
+                        <div class="flex justify-between items-center">
+                            <div class="text-sky-500 flex gap-4">
+                                <span class="material-symbols-outlined hover:bg-neutral-800 hover:rounded-full" style="font-size: 20px;">photo</span>
+                                <span class="material-symbols-outlined hover:bg-neutral-800 hover:rounded-full" style="font-size: 20px;">gif_box</span>
+                                <span class="material-symbols-outlined hover:bg-neutral-800 hover:rounded-full" style="font-size: 20px;">ballot</span>
+                                <span class="material-symbols-outlined hover:bg-neutral-800 hover:rounded-full" style="font-size: 20px;">mood</span>
+                                <span class="material-symbols-outlined hover:bg-neutral-800 hover:rounded-full" style="font-size: 20px;">calendar_clock</span>
+                                <span class="material-symbols-outlined hover:bg-neutral-800 hover:rounded-full" style="font-size: 20px;">location_on</span>
+                            </div>
+                            <button class="px-4.5 py-1.5 bg-neutral-500 rounded-full text-black font-semibold">Post</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="post">
+                    <div class="flex gap-2 mx-4">
+                        <img class="my-3 w-10 h-10 rounded-full" src="https://pbs.twimg.com/profile_images/1563539787029422081/SSx9bjK1_400x400.jpg">
+                        <div class="w-full">
+                            <div class="flex mt-2.5 h-fit w-full justify-between">
+                                <div class="flex gap-1 items-center">
+                                    <h3 class="font-bold">InfraStory</h3>
+                                    <p class="text-med text-neutral-500">@marinebharat · 6h</p>
+                                </div>
+                                <div class="flex h-fit gap-1.5 text-neutral-500 items-center">
+                                    <svg viewBox="0 0 33 32" aria-hidden="true" class="hover:bg-neutral-800 hover:rounded-full w-5 fill-neutral-500 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e"> <g> <path d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466"> </path></g></svg>
+                                    <span class="material-symbols-outlined hover:bg-neutral-800 hover:rounded-full">more_horiz</span>
+                                </div>
+                            </div>
+                            <div class="content pr-3">
+                                <div class="PostText flex flex-col gap-4 text-med font-[450]">
+                                    <p>International EduCity in Kunde Vahal, Navi Mumbai will host more than 10 Foreign Universities</p>
+                                    <p>More than 1 lakh students are expected to do their Alma Mater from here in 1/10th cost</p>
+                                    <p>Tender for 45 meter & 30 meter Roads and flattening of Quary land already floated by CIDCO</p>
+                                </div>
+                                <div class="attachment pt-2.5">
+                                    <img class="h-104 w-78 rounded-2xl object-cover" src="https://pbs.twimg.com/media/G-JAHvyasAAUNpW?format=jpg&name=large">
+                                </div>
+                            </div>
+                            <div class="flex py-2 text-neutral-500 justify-between">
+                                <div class="FeedPostActions">
+                                    <span class="material-symbols-outlined">mode_comment</span>
+                                    <span></span>
+                                </div>
+                                <div class="FeedPostActions">
+                                    <span class="material-symbols-outlined">repeat</span>
+                                </div>
+                                <div class="FeedPostActions">
+                                    <span class="material-symbols-outlined">favorite</span>
+                                </div>
+                                <div class="FeedPostActions">
+                                    <span class="material-symbols-outlined">bar_chart</span>
+                                </div>
+                                <div class="FeedPostActions">
+                                    <span class="material-symbols-outlined">bookmark</span>
+                                    <span class="material-symbols-outlined">ios_share</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="flex gap-2 mx-4">
+                        <img class="my-3 w-10 h-10 rounded-full" src="https://pbs.twimg.com/profile_images/1702393983937208321/LDgd70_f_400x400.jpg">
+                        <div class="w-full">
+                            <div class="flex mt-1.5 h-fit w-full justify-between">
+                                <div class="flex gap-1 items-center">
+                                    <h3 class="font-semibold">🎞️shitposts.mp4🎞️</h3>
+                                    <p class="text-med text-neutral-500">@shitposts_mp4 · </p>
+                                </div>
+                                <div class="flex h-fit text-neutral-500 items-center">
+                                    <svg viewBox="0 0 33 32" aria-hidden="true" class="hover:bg-neutral-800 hover:rounded-full px-1 py-1 w-7 fill-neutral-500 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e"> <g> <path d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466"> </path></g></svg>
+                                    <span class="material-symbols-outlined px-1 py-1 hover:bg-neutral-800 hover:rounded-full">more_horiz</span>
+                                </div>
+                            </div>
+                            <div class="content pr-3 text-med">
+                                <div class="postText">
+                                    People are still making these kind of reels in 2026! 😭
+                                </div>
+                                <div class="attachment pt-2.5">
+                                    <video class="h-104 w-104 border-1 border-neutral-700 rounded-2xl" src="shitpost.mp4" controls></video>
+                                </div>
+                            </div>
+                            <div class="flex py-2 text-neutral-500 justify-between">
+                                <div class="FeedPostActions">
+                                    <span class="material-symbols-outlined">mode_comment</span>
+                                    <span></span>
+                                </div>
+                                <div class="FeedPostActions">
+                                    <span class="material-symbols-outlined">repeat</span>
+                                </div>
+                                <div class="FeedPostActions">
+                                    <span class="material-symbols-outlined">favorite</span>
+                                </div>
+                                <div class="FeedPostActions">
+                                    <span class="material-symbols-outlined">bar_chart</span>
+                                </div>
+                                <div class="FeedPostActions">
+                                    <span class="material-symbols-outlined">bookmark</span>
+                                    <span class="material-symbols-outlined">ios_share</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rightSection hidden lg:flex flex-col gap-4 lg:w-16/50 py-1 px-6">
+            <div class="searchbox relative">
+                <input type="text" placeholder="Search" class="border-1 border-neutral-700 py-2.5 px-8 w-full rounded-full placeholder:font-extralight placeholder:text-med" >
+                <span class="material-symbols-outlined absolute left-3 top-3.75">search</span>
+            </div>
+            <div class="subscribe item">
+                <h2>Subscribe to Premium</h2>
+                <p class="my-2.5">Subscribe to unlock new features and if eligible, recieve a share of revenue</p>
+                <button class="bg-sky-500 px-5 py-1.5 rounded-full my-1 font-[650] hover:bg-sky-600">Subscribe</button>
+            </div>
+            <div class="newstoday item">
+                <div class="top flex items-center justify-between">
+                    <h2>Today's News</h2>
+                    <span class="material-symbols-outlined hover:rounded-full hover:bg-neutral-800 cursor-pointer ">close_small</span>
+                </div>
+                <div class="news flex flex-col gap-7 mt-6 mb-2">
+                    <div class="newsitem">
+                        <p class="subheading">ICE Officer Kills U.S Citizen Women During Minneapolis Immigration Raids</p>
+                        <span class="flex items-center smallspan mt-1">
+                            <div class="Reacts flex relative mr-9">
+                                <img class="z-7 w-6 h-6 rounded-full border-1.5 border-neutral-800" src="https://pbs.twimg.com/profile_images/1883638586148339712/2h5NU8wf_400x400.jpg">
+                                <img class="absolute left-3.5 z- w-6 h-6 rounded-full border-1.5 border-neutral-800" src="https://pbs.twimg.com/profile_images/2008788883098542080/CK3lHwVM_400x400.jpg">
+                                <img class="absolute left-7 z-5 w-6 h-6 rounded-full border-1.5 border-neutral-800" src="https://pbs.twimg.com/profile_images/1789159912993349632/QaPSJX1c_400x400.jpg">
+                            </div>
+                            4 hours ago · News · 663.3K posts
+                        </span>
+                    </div>
+                    <div class="newsitem">
+                        <p class="subheading">Trump Announces Ban on Large Investors Buying Single-Family Homes</p>
+                        <span class="flex items-center smallspan mt-1">
+                            <div class="Reacts flex relative mr-9">
+                                <img class="z-7 w-6 h-6 rounded-full border-1.5 border-neutral-800" src="https://pbs.twimg.com/profile_images/1947447846317236225/rChs3LqV_400x400.jpg">
+                                <img class="absolute left-3.5 z-6 w-6 h-6 border-1.5 border-neutral-800" src="https://pbs.twimg.com/profile_images/1945229821505568768/z05xtDu4_400x400.jpg">
+                                <img class="absolute left-7 z-5 w-6 h-6 rounded-full border-1.5 border-neutral-800" src="https://pbs.twimg.com/profile_images/1593753619148382208/YYzzCs6C_400x400.jpg">
+                            </div>
+                            3 hours ago · News · 663.3K posts
+                        </span>
+                    </div>
+                    <div class="newsitem">
+                        <p class="subheading">Trump Administration Unveils New Dietary Guidelines Prioritizing Real Food</p>
+                        <span class="flex items-center smallspan mt-1">
+                            <div class="Reacts flex relative mr-9">
+                                <img class="z-7 w-6 h-6 rounded-full border-1.5 border-neutral-800" src="https://pbs.twimg.com/profile_images/1947447846317236225/rChs3LqV_400x400.jpg">
+                                <img class="absolute left-3.5 z-6 w-6 h-6 border-1.5 border-neutral-800" src="https://pbs.twimg.com/profile_images/1532793634030080001/rkGxsydj_400x400.jpg">
+                                <img class="absolute left-7 z-5 w-6 h-6 border-1.5 border-neutral-800" src="https://pbs.twimg.com/profile_images/1916971216620982274/1DsLEcqW_400x400.jpg">
+                            </div>
+                            4 hours ago · News · 663.3K posts
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="trending item flex flex-col gap-4.5">
+                <h2>What's happening</h2>
+                <div class="flex justify-between items-center happenings">
+                    <div>
+                        <span class="smallspan">Politics · Trending</span>
+                        <h5 class="subheading">Minneapolis</h5>
+                        <span class="smallspan">148K posts</span>
+                    </div>
+                    <span class="material-symbols-outlined">more_horiz</span>
+                </div>
+                <div class="flex justify-between items-center happenings">
+                    <div>
+                        <span class="smallspan">Trending In United States</span>
+                        <h5 class="subheading">Shooting</h5>
+                        <span class="smallspan">308K posts</span>
+                    </div>
+                    <span class="material-symbols-outlined">more_horiz</span>
+                </div>
+                <div class="flex justify-between items-center happenings">
+                    <div>
+                        <span class="smallspan">Politics · Trending</span>
+                        <h5 class="subheading">Noem</h5>
+                        <span class="smallspan">Trending with <a href="#" class="text-blue-400">Domestic Terrorism</a></span><br>
+                        <span class="smallspan">136K posts</span>
+                    </div>
+                    <span class="material-symbols-outlined">more_horiz</span>
+                </div>
+                <div class="flex justify-between items-center happenings">
+                    <div>
+                        <span class="smallspan">Trending In United States</span>
+                        <h5 class="subheading">ChatGPT Health</h5>
+                        <span class="smallspan">1,491 posts</span>
+                    </div>
+                    <span class="material-symbols-outlined">more_horiz</span>
+                </div>
+                <a href="#" class="text-blue-400 mt-2">Show More</a>
+            </div>
+            <div class="follow item flex flex-col gap-4.5">
+                <h2>Who to follow</h2>
+                <div class="flex items-center justify-between faccounts">
+                    <div class="flex gap-2 items-center">
+                        <img class="w-9 h-9 rounded-full" src="https://pbs.twimg.com/profile_images/1813965160702451712/yXV1vRhr_400x400.jpg" >
+                        <div>
+                            <h5 class="subheading hover:underline hover:decoration-1">PyTorch</h5>
+                            <span class="smallspan">@PyTorch</span>
+                        </div>
+                    </div>
+                    <button class="bg-white text-black px-4 py-1 rounded-full font-medium hover:bg-neutral-300">Follow</button>
+                </div>
+                <div class="flex items-center justify-between faccounts">
+                    <div class="flex gap-2 items-center">
+                        <img class="w-9 h-9" src="https://pbs.twimg.com/profile_images/1695024885070737408/-M-HSH5P_400x400.jpg" >
+                        <div>
+                            <h5 class="subheading hover:underline hover:decoration-1">Goole DeepMind</h5>
+                            <span class="smallspan">@GoogleDeepMind</span>
+                        </div>
+                    </div>
+                    <button class="bg-white text-black px-4 py-1 rounded-full font-medium hover:bg-neutral-300">Follow</button>
+                </div>
+                <div class="flex items-center justify-between faccounts">
+                    <div class="flex gap-2 items-center">
+                        <img class="w-9 h-9 rounded-full" src="https://pbs.twimg.com/profile_images/1813965160702451712/yXV1vRhr_400x400.jpg" >
+                        <div>
+                            <h5 class="subheading hover:underline hover:decoration-1">Andrew Ng </h5>
+                            <span class="smallspan">@AndrewYNg</span>
+                        </div>
+                    </div>
+                    <button class="bg-white text-black px-4 py-1 rounded-full font-medium hover:bg-neutral-300">Follow</button>
+                </div>
+                <a href="#" class="text-blue-400 mt-1 ">Show More</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

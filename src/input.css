@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: TwitterChirp;
+  src: url(https://abs.twimg.com/responsive-web/client-web/Chirp-Light.3a18e64a.woff2) format('woff2');
+  font-weight: 300;
+  font-style: 'normal';
+  font-display: 'swap';
+}
+@font-face {
+  font-family: Vazirmatn;
+  src: url(https://abs.twimg.com/responsive-web/client-web/Vazirmatn-Light.a929468a.woff2) format('woff2');
+  font-weight: 300;
+  font-style: 'normal';
+  font-display: 'swap';
+}
+@font-face {
+  font-family: 'Material Symbols Outlined';
+  font-style: normal;
+  src: url(https://example.com/material-symbols.woff) format('woff');
+}
+
+@theme {
+  --text-med: 15px;
+}
+
+body {
+    /* font-family: 'TwitterChirp'; */
+}
+
+.SideList {
+  @apply flex justify-start items-center w-fit pl-2 pr-9 py-2.5 font-[470] gap-3.5 hover:bg-neutral-900 hover:font-bold hover:text-white hover:rounded-full cursor-pointer
+}
+
+button {
+  @apply cursor-pointer
+}
+
+.logo {
+  @apply w-fit hover:bg-neutral-900 hover:font-bold hover:text-white hover:rounded-full
+}
+.SideList .material-symbols-outlined {
+  font-size: 32px;
+}
+
+.searchbox .material-symbols-outlined {
+  font-size: 18px;
+  color: gray;
+}
+
+.rightSection .item {
+  @apply border-1 border-neutral-700 px-5 py-3 text-med rounded-2xl 
+}
+
+.item h2 {
+  @apply text-xl font-[650]
+}
+
+.subheading {
+  @apply font-[650]
+}
+
+.smallspan {
+  @apply text-[0.84rem] text-neutral-500 mt-1
+}
+
+.newsitem, .happenings, .faccounts {
+  @apply hover:bg-neutral-950 cursor-pointer
+}
+
+.post {
+  @apply border-t-1 border-b-1 border-neutral-700
+}
+
+.FeedPostActions .material-symbols-outlined {
+  @apply px-1 py-1 hover:rounded-full hover:bg-neutral-800 text-[20px]
+}
+
+span, img, video {
+  cursor:pointer;
+}
+
