@@ -1,6 +1,6 @@
 # X (Twitter) UI Clone
 
-**Live Demo:** [![Live Demo](https://img.shields.io/badge/demo-online-green.svg?style=for-the-badge&logo=appveyor)](https://x-clone-tailwind.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/demo-online-green.svg?style=for-the-badge&logo=appveyor)](https://x-clone-tailwind.vercel.app/)
 
 A frontend clone of the X web interface built from scratch. I created this project to get hands-on practice with building complex, highly responsive layouts using Tailwind CSS.
 
